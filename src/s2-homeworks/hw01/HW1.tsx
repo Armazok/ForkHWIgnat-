@@ -7,9 +7,9 @@ import avatar from './avatar.png'
 
 /*
 * 1 - описать тип MessageType ++
-* 2 - описать тип MessagePropsType в файле Message.tsx
-* 3 - в файле Message.tsx отобразить приходящие данные
-* 4 - выполнить пункты 2, 3 в файле FriendMessage.tsx
+* 2 - описать тип MessagePropsType в файле Message.tsx ++
+* 3 - в файле Message.tsx отобразить приходящие данные ++
+* 4 - выполнить пункты 2, 3 в файле FriendMessage.tsx ++
 * 5 - сделать стили в соответствии с дизайном
 * */
 
@@ -32,22 +32,22 @@ export const message0: MessageType = {
     id: 0,
     user: {
         avatar: avatar, // можно менять
-        name: 'Some Name',  // можно менять
+        name: 'Клаус',  // можно менять
     },
     message: {
-        text: 'some textsome textsome textsome textsome textsome textsome text', // можно менять
-        time: '22:00', // можно менять
+        text: 'Текст другу', // можно менять
+        time: '22:01', // можно менять
     },
 }
 export const friendMessage0: MessageType = {
     id: 100,
     user: {
         avatar: avatar, // можно менять
-        name: 'Friend Name', // можно менять
+        name: 'Друг Клауса', // можно менять
     },
     message: {
-        text: 'зеркальное сообщение для тренировки css', // можно менять
-        time: '22:00', // можно менять
+        text: 'Я поменяю', // можно менять
+        time: '22:05', // можно менять
     },
 }
 
@@ -55,6 +55,7 @@ const HW1 = () => {
     return (
         <div id={'hw1'}>
             <div className={s2.hwTitle}>Homework #1</div>
+            <hr/>
             <div className={s2.hw}>
                 {/*проверка отображения (не менять)*/}
                 <div>

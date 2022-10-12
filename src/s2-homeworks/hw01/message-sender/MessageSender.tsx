@@ -1,6 +1,7 @@
 import React, {useEffect, useRef, useState} from 'react'
 import { message0 } from '../HW1'
 import s from './MessageSender.module.css'
+import {Button, TextField} from "@mui/material";
 
 // компонента, которая тестирует вашу компоненту (не изменять, any не трогать)
 const MessageSender = (props: any) => {
@@ -46,10 +47,10 @@ const MessageSender = (props: any) => {
             ))}
 
             <div id={'hw1-send-message-form'} className={s.sendForm}>
-                <textarea
+                <TextField
                     id={'hw1-textarea'}
                     className={s.textarea}
-                    ref={textareaRef}
+                    variant="outlined"
 
                     title={'Shift+Enter for send'}
                     placeholder={'Type your message'}
@@ -58,7 +59,8 @@ const MessageSender = (props: any) => {
                     onChange={onChange}
                     onKeyDown={onKeyDown}
                 />
-                <button
+                <Button
+                    variant="contained"
                     id={'hw1-button'}
                     className={s.button}
 
@@ -67,7 +69,7 @@ const MessageSender = (props: any) => {
                     {/*текст кнопки могут изменить студенты*/}
                     Send
                     {/**/}
-                </button>
+                </Button>
             </div>
         </>
     )
