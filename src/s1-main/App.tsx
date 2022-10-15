@@ -1,16 +1,17 @@
 import React from 'react'
 import s from './App.module.css'
 import HW1 from '../s2-homeworks/hw01/HW1'
-import {Box, Container} from "@mui/material";
+import {Container} from "@mui/material";
 import HW2 from "../s2-homeworks/hw02/HW2";
 import HW3 from "../s2-homeworks/hw03/HW3";
+import HW4 from "../s2-homeworks/hw04/HW4";
 
 function App() {
     return (
         <Container className={s.App}>
-                <HW1/>
+                {/*<HW1/>*/}
                 {/*раскомментировать по ходу выполнения*/}
-                <HW2/>
+               {/* <HW2/>*/}
                 <HW3/>
                 {/*<HW4/>*/}
 

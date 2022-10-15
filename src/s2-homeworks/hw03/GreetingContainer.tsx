@@ -7,11 +7,12 @@ type GreetingContainerPropsType = {
     addUserCallback: (name: string) => void
 }
 
-export const pureAddUser = (name: string, setError: Function, setName: Function, addUserCallback: Function) => {
+export const pureAddUser = (name: string, setError: Function, setName: Function, addUserCallback: (name: string) => void) => {
     if (name.trim() === "") {
         setError("Ошибка! Введите имя!")
     } else {
-        addUserCallback(setName(name))
+        debugger
+        addUserCallback(name)
         setName("")
     }
     // если имя пустое - показать ошибку, иначе - добавить юзера и очистить инпут
@@ -55,7 +56,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
     }
 
     const totalUsers = users.length
-    const lastUserName = ` ${name}`
+    const lastUserName = `${users[users.length - 1]?.name}`
 
     return (
         <Greeting
