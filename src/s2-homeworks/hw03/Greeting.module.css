@@ -5,16 +5,20 @@
 }
 
 .error {
+    color: red;
+    background-color:green;
 }
 
 .input {
+
 }
 
 .input:focus {
 }
 
 .errorInput {
-
+    background-color: red;
+    color: red;
 }
 
 .button {
