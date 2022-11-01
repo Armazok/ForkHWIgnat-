@@ -6,6 +6,7 @@ import React, {
     ReactNode,
 } from 'react'
 import s from './SuperInputText.module.css'
+import {TextField} from "@mui/material";
 
 // тип пропсов обычного инпута
 type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>,
@@ -53,6 +54,7 @@ const SuperInputText: React.FC<SuperInputTextPropsType> = (
     const finalInputClassName = s.input
         + (error ? ' ' + s.errorInput : ' ' + s.superInput)
         + (className ? ' ' + s.className : '') // задача на смешивание классов
+
 
     return (
         <div className={s.inputWrapper}>

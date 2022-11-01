@@ -1,13 +1,13 @@
 .sendForm {
-
+    display: flex;
 }
 
 .textarea {
-
+    width: 100%;
 }
 
 .button {
-
+    margin-left: 20px;
 }
 
 .button:hover {

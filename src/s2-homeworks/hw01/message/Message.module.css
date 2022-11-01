@@ -1,29 +1,48 @@
 .message {
+    display: flex;
+    flex-direction: row-reverse;
 
+    margin-bottom: 20px;
 }
 
 .imageAndText {
-
+    display: flex;
 }
 
 .imageAndText img {
-
+    width: 48px;
+    height: 48px;
+    margin-left: 20px;
 }
 
 .text {
-
+    background-color: #00cc22;
+    border-radius: 5px;
+    padding: 8px 13px;
+    position: relative;
 }
 
 .text:after {
-
+    content: "";
+    position: absolute;
+    background-color:  #00cc22;
+    clip-path: polygon(0 73%, 52% 100%, 0 100%);
+    bottom: 0;
+    right: -22px;
+    height: 49px;
+    width: 26px;
 }
 
 .name {
-
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right   ;
 }
 
 .messageText {
-
+    color: black;
+    font-size: 16px;
 }
 
 .time {

@@ -60,6 +60,7 @@ const MessageSender = (props: any) => {
                     onKeyDown={onKeyDown}
                 />
                 <Button
+                    style={{marginLeft: "20px"}}
                     variant="contained"
                     id={'hw1-button'}
                     className={s.button}
